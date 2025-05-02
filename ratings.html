@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Autors="Данил Шмаков; Мишарин Влад" content="Влад">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>
+        Рейтинги технических ВУЗов РФ
+    </title>
+    <style>
+      .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .content-table thead tr {
+        background-color: #980065;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      .content-table th, .content-table td {
+        padding: 12px 15px;
+      }
+
+      .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+      .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #980065;
+      }
+
+      .content-table tbody tr.active-row {
+        font-weight: bold;
+        color:#980065
+      }
+      .p1 {
+        text-align: left;
+        padding: 30px;
+      }
+      .txt1 {
+            font-size: 20px; 
+            font-family: "Didact Gothic", sans-serif;
+        }
+      .txt2 {
+          font-size: 16px; 
+          font-family: "Didact Gothic", sans-serif;
+          color: white;
+          margin: 0;
+          padding: 0;
+      }
+      .cap2 {
+            font-size: 16px;
+            text-align: center;
+            font-family: "Montserrat Alternates", sans-serif;
+            margin: 20px;
+        }
+      .cap1 {
+          font-size: 12px;
+          opacity: 0.70;
+          text-align: center;
+          font-family: "Montserrat Alternates", sans-serif;
+          margin: 10px;
+      }
+      .link{
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="main page.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ratings.html">Рейтинги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hh.html">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="py-5 p txt1">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 style="text-align: center;"><b>Рейтинг вузов 2024</b></h1>
+              <figure>
+                <img src="https://www.i-l.ru/files/65c/315e97c254/3-pp.jpg" class="pht" width="900px" height="600px">
+                <figcaption class="cap1">
+                  <p>Изображение с сайта <a href="https://www.i-l.ru/events/konsultacii-po-vyboru-strany-obucheniya-i-vuza-za-rubezhom/">ИнсайтЛингва</a></p>
+                </figcaption>
+              </figure>
+              <p>Существует множество показателей деятельности, по которым оценивают различные вузы. Какие из вузов считаются лучшими по тем или иным показателям можно узнать из публикаций рейтинговых агенств, карьерных платформ и других организаций. Следует обратить внимание на следующие рейтинги вузов:</p>
+              <h1><b>Лучшие вузы по версии Forbes:</b></h1>
+              <p class="text-left">В данный рейтинг вошло 100 вузов. Все вузы в списке соответствовали 3 требованиям: наличие российской аккредитации, возможность выдавать дипломы гос. образца, численность учащихся от 400 человек и наличие программ бакалавриата и специалитета. В рейтинге не оценивались филиалы, религиозные и военные вузы.</p>
+              <p class="text-left"><b>Вузы оценивались по следующим 5-ти показателям:</b></p>
+              <ul>
+                <li>Качество <abbr title="возможность сформировать полезные связи в процессе обучения" style="text-decoration: none;">нетворкинга</abbr></li>
+                <li>Репутация в вузе среди работодателей</li>
+                <li>Международная репутация вуза</li>
+                <li>Качество преподавания</li>
+                <li><abbr title="среди выпускников оказывались участники российского списка Forbes" style="text-decoration: none;">"Фактор Forbes"</abbr></li>
+              </ul>
+              <figure>
+                <table class="content-table">
+                  <thead>
+                    <tr class>
+                      <th>Место</th>
+                      <th>ВУЗ</th>
+                      <th>Итоговая оценка</th>
+                    </tr>  
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>МГУ имени М.В.Ломоносова</td>
+                      <td>89.59</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Национальный исследовательский университет: "Высшая школа экономики"</td>
+                      <td>83.5</td>
+                    </tr>
+            
+                    <tr>
+                      <td>3</td>
+                      <td>Московский физико-технический институт (национальный исследовательский университет)</td>
+                      <td>74.54</td>
+                    </tr>
+            
+                    <tr>
+                      <td>4</td>
+                      <td>Санкт-Петербургский государственный университет</td>
+                      <td>62.56</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Московский государственный технический университет имени Н. Э. Баумана</td>
+                      <td>55.12</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Московский государственный институт международных отношений МИД РФ</td>
+                      <td>50.86</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Российский экономический университет имени Г. В. Плеханова</td>
+                      <td>50.34</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Санкт-Петербургский политехнический университет Петра Великого</td>
+                      <td>46.39</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Национальный исследовательский ядерный университет «МИФИ»</td>
+                      <td>46.28</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Финансовый университет при Правительстве РФ</td>
+                      <td>46.28</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <figcaption class="cap2">Источник: Forbes</figcaption>
+              </figure>
+              <p>С полным рейтингом можно ознакомиться на сайте <a href="https://www.forbes.ru/education/515318-lucsie-rossijskie-vuzy-2024-rejting-forbes">Forbes</a>.</p>
+              <h1><b>Топ 100 российских вузов по версии RAEX:</b></h1>
+              <p class="text-left">Авторы оценивают университеты по 3 основным критериям: качество образования, уровень научно-исследовательской деятельности и востребованность выпускников у работодателей. На сайте агентства можно найти, помимо обобщённых результатов, также и позиции вузов по каждому из критериев.</p>
+              <figure>
+                <table class="content-table">
+                  <thead>
+                    <tr class>
+                      <th>Место</th>
+                      <th>ВУЗ</th>
+                      <th>Итоговая оценка</th>
+                    </tr>  
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>МГУ имени М.В.Ломоносова</td>
+                      <td>4.7115</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Московский государственный технический университет имени Н.Э. Баумана (национальный исследовательский университет)</td>
+                      <td>4.5442</td>
+                    </tr>
+            
+                    <tr>
+                      <td>3</td>
+                      <td>Московский физико-технический институт (национальный исследовательский университет)</td>
+                      <td>4.5387</td>
+                    </tr>
+            
+                    <tr>
+                      <td>4</td>
+                      <td>Санкт-Петербургский государственный университет</td>
+                      <td>4.4789</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Национальный исследовательский ядерный университет «МИФИ»</td>
+                      <td>4.4782</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>	
+                        Национальный исследовательский университет "Высшая школа экономики"</td>
+                      <td>4.4720</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>МГИМО МИД России</td>
+                      <td>4.3388</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Санкт-Петербургский политехнический университет Петра Великого</td>
+                      <td>4.1148</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Национальный исследовательский Томский политехнический университет</td>
+                      <td>4.0416</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Российская академия народного хозяйства и государственной службы при Президенте РФ</td>
+                      <td>4.0375</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <figcaption class="cap2">Источник: Рейтинговое агенство RAEX</figcaption>
+              </figure>
+              <p>С полным рейтингом можно ознакомиться на сайте <a href="https://raex-rr.com/education/russian_universities/top-100_universities/2024/">RAEX</a>.</p>
+              <h1><b>Рейтинг российских вузов по версии Интерфакс:</b></h1>
+              <p class="text-left">Информагентство «Интерфакс», в отличие от RAEX, публикует полный список проранжированных в ходе рейтингового исследования вузов, а не только топ-100. В 2024 году оценку прошли 378 учреждений.</p>
+              <figure>
+                <table class="content-table">
+                  <thead>
+                    <tr class>
+                      <th>Место</th>
+                      <th>ВУЗ</th>
+                      <th>Итоговая оценка</th>
+                    </tr>  
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>МГУ имени М.В.Ломоносова</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Национальный исследовательский ядерный университет «МИФИ»</td>
+                      <td>832</td>
+                    </tr>
+            
+                    <tr>
+                      <td>3</td>
+                      <td>Московский физико-технический институт (национальный исследовательский университет)</td>
+                      <td>830</td>
+                    </tr>
+            
+                    <tr>
+                      <td>4</td>
+                      <td>Национальный исследовательский университет «Высшая школа экономики»</td>
+                      <td>746</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Санкт-Петербургский государственный университет</td>
+                      <td>737</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>	
+                        Национальный исследовательский Томский государственный университет</td>
+                      <td>735</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Новосибирский национальный исследовательский государственный университет</td>
+                      <td>712</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Казанский (Приволжский) федеральный университет</td>
+                      <td>651</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Российский университет дружбы народов имени Патриса Лумубы</td>
+                      <td>650</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Национальный исследовательский технологический университет "МИСИС"</td>
+                      <td>649</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <figcaption class="cap2">Источник: Информагенство "Интерфакс"</figcaption>
+              </figure>
+              <p>С полным рейтингом можно ознакомиться на сайте <a href="https://academia.interfax.ru/ru/ratings/?rating=1&year=2024&page=1">Интерфакс</a>.</p>
+              <h1><b>Подробный рейтинг технических вузов:</b></h1>
+              <p>Данный рейтинг составлен на основе рейтинга технических вузов сайта Табитуриент, где были оценены 104 технических вуза России по 9 показателям. Узнать подробнее об оценке и ознакомиться с полным рейтингом вы можете на сайте <a href="https://tabiturient.ru/globalrating/?12">Табитуриент</a>.</p>
+              <figure>
+                <table class="content-table">
+                  <thead>
+                    <tr class>
+                      <th>Место</th>
+                      <th>ВУЗ</th>
+                      <th>Итоговая оценка</th>
+                    </tr>  
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td><a href="mfti.html" class="link">Московский Физико-Технический Институт (государственный университет)</a>
+                      </td>
+                      <td>149.98</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><a href="2ndone.html" class="link">Санкт-Петербургский национальный исследовательский университет информационных технологий, механики и оптики</a></td>
+                      <td>141.74</td>
+                    </tr>
+            
+                    <tr>
+                      <td>3</td>
+                      <td><a href="3rdone.html" class="link">Национальный исследовательский ядерный университет (Московский инженерно-физический институт)</a></td>
+                      <td>141.61</td>
+                    </tr>
+            
+                    <tr>
+                      <td>4</td>
+                      <td><a href="4one.html" class="link">Московский государственный технический университет имени Н.Э. Баумана</a>
+                      </td>
+                      <td>131.02</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td><a href="5th.html" class="link">МИРЭА - Российский технологический университет</a>
+                      </td>
+                      <td>125.04</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td><a href="6one.html" class='link'>Университет науки и технологий МИСИС</a></td>
+                      <td>123.24</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td><a href="7one.html" class="link">Санкт-Петербургский политехнический университет Петра Великого</a>
+                      </td>
+                      <td>119.83</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td><a href="8one.html" class="link">Российский государственный университет нефти и газа (национальный исследовательский университет) имени И.М Губкина</a></td>
+                      <td>119.49</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td><a href="9one.html" class="link">Санкт-Петербургский государственный электротехнический университет «ЛЭТИ» им. В.И. Ульянова (Ленина)</a></td>
+                      <td>118.53</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td><a href="lastone.html" class="link">Санкт-Петербургский горный университет</a></td>
+                      <td>115.99</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <figcaption class="cap2">Источник: Табитуриент: Типичный абитуриент</figcaption>
+              </figure>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footerContaier">
+            <div class="socialicons">
+                <h3>#ВУЗЛИСТ</h3>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="main page.html">Главная</a></li>
+                    <li><a href="ratings.html">Рейтинги</a></li>
+                    <li><a href="hh.html">Отзывы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2025; Designed by Me<span class="designer"></span></p>
+        </div>
+    </footer>
+</body>
